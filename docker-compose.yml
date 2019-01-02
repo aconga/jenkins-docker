@@ -13,7 +13,7 @@ services:
     api:
       build: ./api
       restart: always
-      command: python /var/jenkins_home/workspace/demo/api/manage.py runserver 0.0.0.0:8000
+      command: python manage.py runserver 0.0.0.0:8000
       ports:
         - "8002:8000"
       volumes:
